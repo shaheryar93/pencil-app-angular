@@ -1,0 +1,73 @@
+<section class="wrapper">
+  <div class="container-fluid">
+    <div class="row main-title">
+      <div class="col-12 col-5">
+
+
+
+      <div  class="objectButtonsWrapper">
+        <label>color
+          <input style="
+          margin-left: 90px;margin-right: 40px;" type="color" id="favcolor"  [(ngModel)]="color" name="favcolor"
+          value="{{color}}">
+        </label>
+
+
+
+        <div class="objectButtons">
+        <button style=" background-color:rgb(177, 176, 176);
+        color:black;
+        margin-left: 90px;"  class='btn btn-default' (click)="createRectangle()">Rectangle</button>
+        <button style=" background-color:rgb(177, 176, 176);
+        color:black;
+        margin-left: 90px;" class='btn btn-default' (click)="createCircle()">Circle</button>
+        <button style=" background-color:rgb(177, 176, 176);
+        color:black;
+        margin-left: 90px;" class='btn btn-default' (click)="toggleMode()">Toggle {{currentModes=='pan'?'drawing':'pan'}} Mode</button>
+        <button style=" background-color:rgb(177, 176, 176);
+        color:black;
+        margin-left: 90px;" (click)="clearCanvas()"  class='btn btn-default'>
+          <div class='clearfix'></div>
+          &nbsp; clear canvas &nbsp;
+        </button>
+      </div>
+
+      </div>
+
+    </div>
+    </div>
+
+    <div style="margin-left: 377px;
+    margin-right: 19px;
+    height: 100vh;
+    background: white;" class="row dashboard">
+
+      <canvas width="900px" height="750px" style="color: aliceblue;" id="canvas" ></canvas>
+
+      <script src="lib/fabric.js"></script>
+
+    </div>
+  </div>
+</section>
+<div class="l-sidebar" >
+  <div class="logo">
+
+    <div class="c-header-icon js-hamburger" >
+      <div class="hamburger-toggle">
+        <span class="bar-top"></span>
+        <span class="bar-mid"></span>
+        <span class="bar-bot"></span>
+      </div>
+    </div>
+  </div>
+  <div class="l-sidebar__content">
+    <nav class="c-menu js-menu">
+      <ul class="u-list">
+
+
+
+        <li style="height: 65px;"></li>
+      </ul>
+    </nav>
+  </div>
+</div>

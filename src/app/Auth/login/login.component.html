@@ -1,0 +1,31 @@
+<section class="login">
+  <div class="container">
+      <div  class="row">
+
+          <div style="padding-left: 51%;" class="col-12 col-md-12 col-sm-12 vertical-align-parent content-area">
+              <div class="vertical-align-child">
+                  <div class="login-box">
+                      <h1 class="mb-3 py-1 border-bottom border-primary text-left text-purple">LOGIN</h1>
+
+                      <div  ngDefaultControl [(ngModel)]="email" class="form-group">
+                          <input type="text" class="form-control" id="EventName" aria-describedby="emailHelp"
+                              placeholder="email">
+
+                      </div>
+                      <div style="margin-bottom: 3px;" ngDefaultControl [(ngModel)]="password" class="form-group">
+                          <input type="password" class="form-control" id="EventName" aria-describedby="emailHelp"
+                              placeholder="Password">
+
+                      </div>
+
+                      <div class="form-group">
+                          <button class="btn btn-ucwdc" (click)="login()">Login</button>
+                      </div>
+
+
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>

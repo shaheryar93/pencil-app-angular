@@ -1,0 +1,78 @@
+<section class="secondary-navbar" *ngIf=" (router.url != '/login')">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a href="">
+        <img src="../../../assets/icons/canvas.png" alt="UCWDC" id="logo" width="50" height="50" />
+
+      </a>
+      <h2 class="m-0 ml-2">Pencil Canvas App</h2>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+
+    </nav>
+  </header>
+  <div class="l-sidebar">
+    <div class="logo">
+
+    </div>
+    <div class="l-sidebar__content">
+      <nav class="c-menu js-menu">
+        <ul class="u-list">
+          <li class="c-menu__item "  data-toggle="tooltip" title="Home"
+            >
+            <div class="c-menu__item__inner"><i class="fa fa-home"></i>
+              <div class="c-menu-item__title"><span>Home</span></div>
+            </div>
+          </li>
+
+          <li class="c-menu__item"  data-toggle="tooltip" title="Users"
+           >
+            <div class="c-menu__item__inner"><i class="fa fa-users"></i>
+              <div class="c-menu-item__title"><span>Users</span></div>
+            </div>
+          </li>
+
+          <li class="c-menu__item"  data-toggle="tooltip" title="Images">
+            <div class="c-menu__item__inner"><i class="fa fa-picture-o"></i>
+              <div class="c-menu-item__title"><span>Images</span></div>
+            </div>
+          </li>
+
+          <li class="c-menu__item"  data-toggle="tooltip" title="Template"
+         >
+            <div class="c-menu__item__inner"><i class="fa fa-code"></i>
+              <div class="c-menu-item__title"><span>Template</span></div>
+            </div>
+          </li>
+
+          <li class="c-menu__item"  data-toggle="tooltip" title="Email"
+           >
+            <div class="c-menu__item__inner"><i class="fa fa-envelope"></i>
+              <div class="c-menu-item__title"><span>Emails</span></div>
+            </div>
+          </li>
+
+          <li class="c-menu__item"  data-toggle="tooltip" title="Admin"
+            >
+            <div class="c-menu__item__inner"><i class="fa fa-user-md"></i>
+              <div class="c-menu-item__title"><span>Admin</span></div>
+            </div>
+          </li>
+          <li class="c-menu__item"  data-toggle="tooltip" title="Admin"
+          >
+          <div (click)="logout()" class="c-menu__item__inner"><i class="fa fa-sign-out"></i>
+            <div class="c-menu-item__title"><span>Logout</span></div>
+          </div>
+        </li>
+
+
+        </ul>
+      </nav>
+    </div>
+  </div>
+</section>
