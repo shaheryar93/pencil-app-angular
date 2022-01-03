@@ -9,8 +9,7 @@ import { LoginComponent } from './Auth/login/login.component';
 import { SignUpComponent } from './Auth/sign-up/sign-up.component';
 import { ToastrServiceService } from './Shared-General/services/toastr-service.service'
 import { HomeModule } from './home/home.module';
-import { AngularFireModule} from 'angularfire2';
-import { AngularFireDatabaseModule} from 'angularfire2/database';
+
 import { environment } from 'src/environments/environment';
 @NgModule({
   declarations: [
@@ -24,8 +23,6 @@ import { environment } from 'src/environments/environment';
     AppRoutingModule,
     HttpClientModule,
     HomeModule,
-    AngularFireModule.initializeApp(environment.firebase),
-    AngularFireDatabaseModule,
     FormsModule
   ],
   exports: [NavbarComponent],

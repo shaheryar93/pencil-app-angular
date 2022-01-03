@@ -1,8 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { fabric } from "fabric";
-import { AngularFireDatabase} from 'angularfire2/database';
-import { FirebaseApp} from 'firebase/app';
+
 
 import { SessionManagerService } from 'src/app/Shared-General/services/session-manager.service';
 @Component({
@@ -11,22 +10,12 @@ import { SessionManagerService } from 'src/app/Shared-General/services/session-m
   styleUrls: ['./landing-page.component.css']
 })
 export class LandingPageComponent implements OnInit {
-  firebaseConfig:{
-    apiKey: "AIzaSyAQYVu07De7cxnhZs8oi3NL7u7c7uVvimY",
-  authDomain: "pencilapp-7f0d7.firebaseapp.com",
-  projectId: "pencilapp-7f0d7",
-  storageBucket: "pencilapp-7f0d7.appspot.com",
-  messagingSenderId: "783450773191",
-  appId: "1:783450773191:web:650e3a33aa924aa13f90e2",
-  measurementId: "G-CTXNSET8M2"
-  }
+
   color='black'
   canvas:any
   constructor(public router: Router,
     public SessionManagerServiceObj: SessionManagerService) {
-    //  let designs:any=[]
-    //  designs=db.list('/designs');
-    //  console.log(designs)
+
     }
 
      currentModes
