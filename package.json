@@ -2,13 +2,13 @@
   "name": "angular-test-pencil",
   "version": "0.0.0",
   "scripts": {
+    "heroku-postBuild": "ng build --prod",
     "ng": "ng",
     "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e",
-    "heroku-postBuild": "ng build --prod"
+    "e2e": "ng e2e"
   },
   "private": true,
   "dependencies": {
@@ -23,6 +23,7 @@
     "@angular/router": "~8.1.2",
     "angular-font-awesome": "^3.1.2",
     "bootstrap": "^5.1.3",
+    "express": "^4.17.2",
     "fabric": "^4.6.0",
     "firebase-admin": "^10.0.1",
     "font-awesome": "^4.7.0",
